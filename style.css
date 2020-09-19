@@ -1,0 +1,40 @@
+* {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background: #000;
+    position: absolute;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+
+.test {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    animation: 6s test linear infinite;
+}
+
+
+#box:hover .test {
+    bottom: -40px;
+}
+
+@keyframes test {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
